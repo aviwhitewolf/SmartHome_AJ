@@ -1,0 +1,14 @@
+<div *ngIf="type == 'success'" class="absolute top-8 right-8 left-8 flex justify-center">
+    <div class="inline-block text-white bg-green-500 rounded-lg px-5 py-4 shadow-xl">
+     <span class="text-sm  font-medium"> Awesome, request successful </span>
+     <mat-icon class="text-sm flex justify-center font-semibold text-center">done</mat-icon>
+    </div>
+  </div>
+
+  <div *ngIf="type == 'error'" class="absolute top-8 right-8 left-8 flex justify-center">
+    <div class="inline-block text-white bg-red-500 rounded-lg px-5 py-4 shadow-xl">
+     <span class="text-sm  font-medium"> Oops error occurred, {{errorMsg}}</span>
+     
+    </div>
+  </div>
+  

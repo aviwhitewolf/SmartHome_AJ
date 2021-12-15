@@ -1,0 +1,119 @@
+<div class="border shadow-md rounded-lg">
+    <div class="p-6">
+  
+      <div class="flex items-center justify-between">
+        <h3 class="text-gray-900 font-medium">Bulb</h3>
+        <div class="grid grid-cols-2 gap-4">
+  
+          <!-- Active: "ring-2 ring-indigo-500" -->
+          <label
+            class="group relative border rounded-md p-2 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1  bg-white shadow-sm text-gray-900 cursor-pointer">
+            <input type="radio" name="size-choice" value="XS" class="sr-only" aria-labelledby="size-choice-1-label">
+            <p class="text-gray-500">
+              ON
+            </p>
+  
+            <!--
+                          Active: "border", Not Active: "border-2"
+                          Checked: "border-indigo-500", Not Checked: "border-transparent"
+                          -->
+            <div class="absolute -inset-px rounded-md pointer-events-none" aria-hidden="true">
+            </div>
+          </label>
+  
+          <!-- Active: "ring-2 ring-indigo-500" -->
+          <label
+            class="ring-2 ring-indigo-500 border-indigo-500 group relative border rounded-md 2 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1  bg-white shadow-sm text-gray-900 cursor-pointer">
+            <input type="radio" name="size-choice" value="S" class="sr-only" aria-labelledby="size-choice-2-label">
+            <p class="text-gray-500">
+              OFF
+            </p>
+  
+            <!--
+                          Active: "border", Not Active: "border-2"
+                          Checked: "border-indigo-500", Not Checked: "border-transparent"
+                           -->
+            <div class="absolute -inset-px rounded-md pointer-events-none" aria-hidden="true">
+            </div>
+          </label>
+  
+        </div>
+      </div>
+  
+  
+      <span style="margin-left: -14px;"
+        class="flex material-icons text-6xl md:text-8xl text-gray-600">emoji_objects</span>
+  
+  
+      <div class="mt-6">
+        <!-- Colors -->
+        <h3 class=" text-gray-900 font-medium">Color</h3>
+  
+        <fieldset class="mt-4">
+          <legend class="sr-only">
+            Choose a color
+          </legend>
+          <div class="flex items-center space-x-3">
+            <!--
+                          Active and Checked: "ring ring-offset-1"
+                          Not Active and Checked: "ring-2"
+                          -->
+            <label
+              class="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-gray-500 ring ring-offset-1">
+              <input type="radio" name="color-choice" value="White" class="sr-only"
+                aria-labelledby="color-choice-0-label">
+              <p id="color-choice-0-label" class="sr-only">
+                White
+              </p>
+              <span aria-hidden="true"
+                class="h-8 w-8 bg-indigo-600 border border-black border-opacity-10 rounded-full"></span>
+            </label>
+  
+            <!--
+                              Active and Checked: "ring ring-offset-1"
+                              Not Active and Checked: "ring-2"
+                          -->
+            <label
+              class="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-gray-400">
+              <input type="radio" name="color-choice" value="Gray" class="sr-only" aria-labelledby="color-choice-1-label">
+              <p id="color-choice-1-label" class="sr-only">
+                Gray
+              </p>
+              <span aria-hidden="true"
+                class="h-8 w-8 bg-red-500 border border-black border-opacity-10 rounded-full"></span>
+            </label>
+  
+            <!--
+                            Active and Checked: "ring ring-offset-1"
+                            Not Active and Checked: "ring-2"
+                          -->
+            <label
+              class="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-gray-900">
+              <input type="radio" name="color-choice" value="Black" class="sr-only"
+                aria-labelledby="color-choice-2-label">
+              <p id="color-choice-2-label" class="sr-only">
+                Black
+              </p>
+              <span aria-hidden="true"
+                class="h-8 w-8 bg-yellow-500 border border-black border-opacity-10 rounded-full"></span>
+            </label>
+          </div>
+        </fieldset>
+  
+  
+  
+        <h3 class=" text-gray-900 font-medium mt-6">Range</h3>
+  
+        <mat-slider class="w-full mt-2" min="1" max="255" step="1" value="50"></mat-slider>
+  
+        <div class="flex">
+          <button
+            class="mt-10 w-full border-indigo-600 border-2 rounded-md p-2 flex items-center justify-center text-base font-medium hover:bg-gray-50 text-gray-800  focus:bg-indigo-100">Edit</button>
+  
+          <button 
+            class="ml-4 mt-10 w-full bg-indigo-600 border border-transparent rounded-md  flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

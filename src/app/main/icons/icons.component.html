@@ -1,0 +1,14 @@
+<div class="sm:p-4 md:p-8 max-w-full">
+    <div class="p-2">
+        <input type="text" (keyup)="searchIcon($any($event).target.value)" name="icon" autocomplete="null" placeholder="Search"
+            class="mt-1 mb-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+            <mat-progress-bar *ngIf="showLoader" mode="indeterminate"></mat-progress-bar>    
+    </div>
+    <div class="mt-2 sm:mt-0 m-auto">
+        <div class="flex flex-wrap items-center justify-center">
+            <div *ngFor="let icon of filterIcons">
+                <span (click)="selecteIcon(icon)" class="p-4 cursor-pointer hover:shadow-md rounded-md text-3xl material-icons text-gray-500">{{icon}}</span>
+            </div>
+        </div>
+    </div>
+</div>
